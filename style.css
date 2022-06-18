@@ -168,11 +168,20 @@ button:hover{
     text-decoration: none;
 }
 
+/* Media query desktop */
+
+@media screen and (max-width:1440px) {
+    body{
+        flex-direction: row;
+        width: 1440px;
+        background-image: url('images/bg-intro-desktop.png');
+    }   
+}
 
 /* Media query mobile */
 
 @media screen and (min-width:375px) {
-    .container{
+    body{
         flex-direction: column;
         width: 375px;
         background-image: url('images/bg-intro-mobile.png');
@@ -180,12 +189,3 @@ button:hover{
     
 }
 
-/* Media query desktop */
-
-@media screen and (max-width:1440px) {
-    .container{
-        flex-direction: row;
-        width: 1440px;
-        background-image: url('images/bg-intro-desktop.png');
-    }   
-}
