@@ -16,27 +16,20 @@ body{
     background-size: cover;
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
+    background-color: hsl(0, 100%, 74%);
 }
 
 /* Styling the main */
 
 main{
     width: 70%;
-    margin: auto;
+    margin: 150px auto 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
-}
-
-/* Styling the parent container */
-
-.container{
-    display: flex;
-    height: 100vh;
-    padding: 200px;
-    background-color: hsl(0, 100%, 74%) ;
+    height: 100%;
+    padding: 10px;
 }
 
 /* Styling the left container */
@@ -45,6 +38,7 @@ main{
     display: grid;
     width: 50%;
     height: 50%;
+    text-align: left
 }
 
 /* Styling the right container */
@@ -59,9 +53,7 @@ main{
 
 h1{
     color: white;
-    padding-top: 80px;
     padding-right: 50px;
-    font-size: 20px;
     font-weight: 700;
 }
 
@@ -71,7 +63,6 @@ main h4{
     color: white;
     padding-right: 20px;
     padding-top: 20px;
-    font-size: 10px;
 }
 
 main h6{
@@ -89,6 +80,7 @@ main h6{
     border: 2px;
     background-color: white;
     border-radius: 10px;
+    padding: 20px
 }
 
 /* First name */
@@ -101,6 +93,7 @@ main h6{
     padding: 5px;
     color: rgb(21, 20, 20);
     background-color: rgb(243, 242, 246);
+    border: thin solid hsl(0, 100%, 74%);
 }
 
 /* Last name */
@@ -113,6 +106,7 @@ main h6{
     padding: 5px;
     color: rgb(21, 20, 20);
     background-color: rgb(243, 242, 246);
+    border: thin solid hsl(0, 100%, 74%);
 }
 
 /* Email */
@@ -125,6 +119,7 @@ main h6{
     padding: 5px;
     color: rgb(21, 20, 20);
     background-color: rgb(243, 242, 246);
+    border: thin solid hsl(0, 100%, 74%);
 }
 
 /* Password */
@@ -137,6 +132,7 @@ main h6{
     padding: 5px;
     color: rgb(21, 20, 20);
     background-color: rgb(243, 242, 246);
+    border: thin solid hsl(0, 100%, 74%);
 }
 
 /* Stylying the register button */
@@ -152,6 +148,7 @@ button{
     text-align: center;
     font-size: 10px;
     color: white;
+    border: none;
 }
 
 button:hover{
@@ -170,22 +167,20 @@ button:hover{
 
 /* Media query desktop */
 
-@media screen and (max-width:1440px) {
+@media screen and (min-width:1440px) {
     body{
-        flex-direction: row;
-        width: 1440px;
         background-image: url('images/bg-intro-desktop.png');
-    }   
+    }
+    .right, .left{width: 50%}   
 }
 
 /* Media query mobile */
 
 @media screen and (min-width:375px) {
     body{
-        flex-direction: column;
-        width: 375px;
         background-image: url('images/bg-intro-mobile.png');
     }
+    .right, .left{width: 100%}
     
 }
 
