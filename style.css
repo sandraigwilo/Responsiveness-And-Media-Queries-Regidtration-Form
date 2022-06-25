@@ -192,8 +192,5 @@ button:hover{
     .right, .left{
         height: 50%;
     }
-    .left{
-        padding-right: 100px;
-    }
 }
 
